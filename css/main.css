@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   padding: 0;
   margin: 0;
 }
@@ -100,8 +100,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .uppercase {
@@ -181,6 +180,11 @@ h6,
   position: relative;
 }
 
+.home .content {
+  position: relative;
+  z-index: 1
+}
+
 .home .logo {
   padding: 2rem;
   padding-bottom: 1rem;
@@ -192,6 +196,7 @@ h6,
   bottom: 0;
   left: 0;
   position: absolute;
+  z-index: 0
 }
 
 .home .title {
@@ -249,7 +254,11 @@ h6,
 }
 
 .about .bold {
-  font-weight: 300;
+  font-weight: 500;
+}
+
+.about p {
+  font-size: 2rem;
 }
 
 /* Health */
