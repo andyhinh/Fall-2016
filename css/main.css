@@ -223,17 +223,10 @@ h6,
   }
 }
 
-@media screen and (min-width: 480px) {
-  .home .date,
-  .home .university {
-    font-size: 2.8rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .home .date,
   .home .university {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -243,7 +236,7 @@ h6,
 .about {
   background: #F78753;
   color: #fff;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .about .bold {
@@ -254,6 +247,22 @@ h6,
   width: 0;
   height: 0;
   background: #F78753;
+  bottom: 0;
+  border-bottom: 8rem solid #00B388;
+  border-right: 100vw solid transparent;
+}
+
+/* Health */
+
+.health {
+  background: #00B388;
+  color: #fff;
+}
+
+.health-divider {
+  width: 0;
+  height: 0;
+  background: #00B388;
   bottom: 0;
   border-bottom: 8rem solid white;
   border-left: 100vw solid transparent;
