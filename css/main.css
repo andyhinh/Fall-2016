@@ -9,6 +9,10 @@ body {
   background: #222;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 
 /* Helpers */
 
@@ -28,7 +32,6 @@ body {
   margin-right: -0.3rem;
   margin-top: 1rem;
 }
-
 
 /* Components */
 
@@ -74,6 +77,12 @@ body {
     margin-bottom: 0.5rem;
     width: 80%;
   }
+}
+
+.divider {
+  width: 0;
+  height: 0;
+  bottom: 0;
 }
 
 
@@ -243,15 +252,6 @@ h6,
   font-weight: 300;
 }
 
-.about-divider {
-  width: 0;
-  height: 0;
-  background: #F78753;
-  bottom: 0;
-  border-bottom: 8rem solid #00B388;
-  border-right: 100vw solid transparent;
-}
-
 /* Health */
 
 .health {
@@ -259,13 +259,10 @@ h6,
   color: #fff;
 }
 
-.health-divider {
-  width: 0;
-  height: 0;
-  background: #00B388;
-  bottom: 0;
-  border-bottom: 8rem solid white;
-  border-left: 100vw solid transparent;
+.health .divider {
+  background: #F78753;
+  border-bottom: 8rem solid #00B388;
+  border-right: 100vw solid transparent;
 }
 
 
@@ -284,14 +281,17 @@ h6,
   margin-bottom: 0.5rem;
 }
 
+.sponsors .divider {
+  background: #00B388;
+  border-bottom: 8rem solid white;
+  border-left: 100vw solid transparent;
+}
+
 
 /* Footer */
 
-.footer-divider {
-  width: 0;
-  height: 0;
+.footer .divider {
   background: #fff;
-  bottom: 0;
   border-bottom: 8rem solid #222;
   border-right: 100vw solid transparent;
 }
