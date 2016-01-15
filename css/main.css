@@ -83,6 +83,8 @@ section {
   width: 0;
   height: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -268,8 +270,18 @@ h6,
   color: #fff;
 }
 
+.tracks img {
+  height: 6rem;
+}
+
 .tracks h3 {
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+}
+
+.tracks .row > div {
   text-align: center
 }
 
@@ -299,6 +311,7 @@ h6,
   background: #00B388;
   border-bottom: 8rem solid white;
   border-left: 100vw solid transparent;
+  padding-top: 4rem;
 }
 
 
