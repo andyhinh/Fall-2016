@@ -25,13 +25,6 @@ section {
   user-select: none;
 }
 
-.vhelper {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -0.3rem;
-  margin-top: 1rem;
-}
 
 /* Components */
 
@@ -102,7 +95,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .uppercase {
@@ -194,6 +187,10 @@ h6,
   max-width: 60rem;
 }
 
+.home .date {
+  margin-bottom: 1rem;
+}
+
 .home .mars {
   bottom: 0;
   left: 0;
@@ -263,6 +260,7 @@ h6,
   font-size: 2rem;
 }
 
+
 /* tracks */
 
 .tracks {
@@ -299,12 +297,21 @@ h6,
   padding-bottom: 4rem;
 }
 
+.interested {
+  font-size: 1.6rem;
+}
+
 .nodes {
   text-align: center;
 }
 
-.nodes > div {
-  margin-bottom: 0.5rem;
+.nodes > [class*=' col-'] {
+  display: inline-block;
+  float: none;
+  margin-bottom: 1rem;
+  margin-right: -0.3rem;
+  margin-top: 1rem;
+  vertical-align: middle;
 }
 
 .sponsors .divider {
