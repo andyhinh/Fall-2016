@@ -317,6 +317,11 @@ h6,
   vertical-align: middle;
 }
 
+.company-nodes > [class*=' col-'] {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
 .sponsors .divider {
   background: #fff;
 }
