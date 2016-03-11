@@ -38,8 +38,8 @@ section {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.42857143;
-  margin-bottom: 0;
-  padding: 1rem 2.4rem;
+  margin: 0.5rem;
+  padding: 1.5rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -186,7 +186,9 @@ h6,
 }
 
 .home .date {
-  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 4.8rem !important;
+  margin: 0.5rem 0;
 }
 
 .home .mars {
@@ -247,7 +249,7 @@ h6,
 .about {
   background: #F78753;
   color: #fff;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .about .bold {
@@ -268,8 +270,8 @@ h6,
 .tracks {
   background: #00B388;
   color: #fff;
-  padding-top: 50px;
-  padding-bottom: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 .tracks img {
@@ -296,7 +298,7 @@ h6,
 
 .sponsors {
   background: #fff;
-  padding-top: 50px;
+  padding-top: 8rem;
   padding-bottom: 4rem;
 }
 
@@ -336,6 +338,6 @@ h6,
   background: #222;
   color: #fff;
   font-size: 2.4rem;
-  padding-top: 60px;
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
