@@ -289,6 +289,12 @@ h2 {
   text-transform: uppercase;
 }
 
+.tracks h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
 .tracks .row > div {
   text-align: center
 }
