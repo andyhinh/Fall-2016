@@ -33,6 +33,7 @@ section {
   background: linear-gradient(to left, white 50%, #00B388 50%);
   background-size: 200% 200%;
   background-position: right bottom;
+  border: none;
   color: #05abe0;
   display: inline-block;
   font-size: 2rem;
