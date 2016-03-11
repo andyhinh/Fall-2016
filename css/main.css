@@ -342,6 +342,14 @@ h2 {
   fill: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .company-nodes > [class*=' col-'] {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+
 /* Footer */
 
 .footer {
