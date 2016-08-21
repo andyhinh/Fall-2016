@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="CodeRED is Houston's Premier Hackathon and Innovation Event. It's a place for students to learn something new, explore possibilities, solve problems, and build out their dreams." name="description">
+  <title>Registration | CodeRED Curiosity</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900" rel="stylesheet" type="text/css">
+  <link href="../css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="../scripts/dropdown_select.js"></script>
+</head>
+
+<body class="sponsor">
+  <section class="home text-center" id="home" style="background: #05abe0">
+    <div class="content">
+      <img alt="CodeRED Curiosity Houston's Premier Hackathon" class="logo" src="../img/logo.svg">
+      <h1 class="title">
+        CodeRED Curiosity | Houston's Premier Innovation Experience &amp; Hackathon
+      </h1>
+      <!-- <h3 class="university white uppercase">
+        <b class="uni">University</b> of <b class="houston red">
+          Houston
+        </b>
+      </h3> -->
+      <h3 class="date white uppercase">
+        October, 2016
+      </h3>
+      <!-- Begin MailChimp Signup Form -->
+      <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup {
+          background: #fff;
+          border-radius: 1rem;
+          clear: left;
+          padding: 2rem 0;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup" class="container">
+        <form action="https://cougarcs.us12.list-manage.com/subscribe/post?u=b215cfccc354f423d38e9db4b&amp;id=e10f1b0585" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Registration</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <strong>Signing up as? <span class="asterisk">*</span>
+</strong>
+              <select id="role">
+                <option value="">Select</option>
+                <option value="participant">Participant</option>
+                <option value="mentor">Mentor</option>
+              </select>
+            </div>
+            <div id="registration_content">
+              <div id="participant_content">
+                <h2>This is participant</h2>
+                <div class="mc-field-group">
+                  <label for="mce-FNAME">First Name <span class="asterisk">*</span>
+                  </label>
+                  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-LNAME">Last Name <span class="asterisk">*</span>
+                  </label>
+                  <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+              </div>
+              <div id="mentor_content">
+                <h2>This is mentor</h2>
+                <div class="mc-field-group">
+                  <label for="mce-FNAME">First Name <span class="asterisk">*</span>
+                  </label>
+                  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-LNAME">Last Name <span class="asterisk">*</span>
+                  </label>
+                  <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+            $("#role").change(function() {
+              var selection = $("#role").val();
+
+              if (selection == "") {
+                $("#registration_content").hide();
+              } else if (selection == "participant") {
+                $("#registration_content").show();
+                $("#participant_content").show();
+                $("#mentor_content").hide();
+              } else if (selection == "mentor") {
+                $("#registration_content").show();
+                $("#participant_content").hide();
+                $("#mentor_content").show();
+              }
+            });
+            </script>
+          </div>
+        </form>
+      </div>
+      <div class="about-divider divider">
+        <svg width="100%" height="100%" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <polyline points="0,0 100,100 100,0"></polyline>
+        </svg>
+      </div>
+      <section class="footer" id="footer">
+        <div class="container text-center">
+          <img src="../img/cougar.svg" width="120">
+          <p>Copyright &copy; CougarCS 2016</p>
+        </div>
+      </section>
+  </body>
+</html>
