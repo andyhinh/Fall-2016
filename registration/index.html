@@ -63,58 +63,91 @@
             </div>
             <div id="registration_content">
               <div id="participant_content">
-                <div class="mc-field-group size1of2">
-                  <label for="mce-FNAME">First Name<span class="asterisk">*</span>
-                  </label>
-                  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group size1of2">
-                  <label for="mce-LNAME">Last Name<span class="asterisk">*</span>
-                  </label>
-                  <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-ADDRESS">Address<span class="asterisk">*</span>
-                  </label>
-                  <input type="text" value="" name="ADDRESS" class="required" id="mce-ADDRESS">
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                  </label>
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-PHONE">Phone Number <span class="asterisk">*</span>
-                  </label>
-                  <input type="text" name="PHONE" class="required" value="" id="mce-PHONE">
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-BIRTH">Birthday <span class="asterisk">*</span>
-                  </label>
-                  <input type="date" name="BIRTH" class="required" value="" id="mce-BIRTH">
-                </div>
-                <div class="size1of2">
-                  <label for="mce-GENDER">Gender<span class="asterisk">*</span>
-                  </label>
-                  <br>
-                  <input type="radio" name="gender" value="male"> Male<br>
-                  <input type="radio" name="gender" value="female"> Female<br>
-                  <input type="radio" name="gender" value="other"> Other
-                </div>
+                <ol>
+                  <li class="page current" id="page1">
+                    <h2>Personal Information</h2>
+                    <div class="mc-field-group size1of2">
+                      <label for="mce-FNAME">First Name<span class="asterisk">*</span>
+                      </label>
+                      <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                    </div>
+                    <div class="mc-field-group size1of2">
+                      <label for="mce-LNAME">Last Name<span class="asterisk">*</span>
+                      </label>
+                      <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-ADDRESS">Address<span class="asterisk">*</span>
+                      </label>
+                      <input type="text" value="" name="ADDRESS" class="required" id="mce-ADDRESS">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-PHONE">Phone Number <span class="asterisk">*</span>
+                      </label>
+                      <input type="text" name="PHONE" class="required" value="" id="mce-PHONE">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-BIRTH">Birthday <span class="asterisk">*</span>
+                      </label>
+                      <input type="date" name="BIRTH" class="required" value="" id="mce-BIRTH">
+                    </div>
+                    <div class="size1of2">
+                      <label for="mce-GENDER">Gender<span class="asterisk">*</span>
+                      </label>
+                      <br>
+                      <input type="radio" name="GENDER" value="male"> Male<br>
+                      <input type="radio" name="GENDER" value="female"> Female<br>
+                      <input type="radio" name="GENDER" value="other"> Other
+                    </div>
 
-                <div class="size1of2">
-                  <label for="mce-ETHNICITY">Ethnicity</label>
-                  <br>
-                  <input type="radio" name="ethnicity" value="AsianAmerican"> Asian American<br>
-                  <input type="radio" name="ethnicity" value="Black"> Black<br>
-                  <input type="radio" name="ethnicity" value="Hispanic_Latino"> Hispanic/Latino<br>
-                  <input type="radio" name="ethnicity" value="NativeAmerican"> Native American<br>
-                  <input type="radio" name="ethnicity" value="Pacific Islander"> Pacific Islander<br>
-                  <input type="radio" name="ethnicity" value="White"> White<br>
-                  <input type="radio" name="ethnicity" value="Other"> Other
-
-                </div>
-                <hr />
+                    <div class="size1of2">
+                      <label for="mce-ETHNICITY">Ethnicity</label>
+                      <br>
+                      <input type="radio" name="ETHNICITY" value="AsianAmerican"> Asian American<br>
+                      <input type="radio" name="ETHNICITY" value="Black"> Black<br>
+                      <input type="radio" name="ETHNICITY" value="Hispanic_Latino"> Hispanic/Latino<br>
+                      <input type="radio" name="ETHNICITY" value="NativeAmerican"> Native American<br>
+                      <input type="radio" name="ETHNICITY" value="Pacific Islander"> Pacific Islander<br>
+                      <input type="radio" name="ETHNICITY" value="White"> White<br>
+                      <input type="radio" name="ETHNICITY" value="Other"> Other
+                    </div>
+                    <hr />
+                  </li>
+                  <li class="page" id="page2">
+                    <h2>Education</h2>
+                    <div class="mc-field-group">
+                      <label for="mce-SCHOOL">University<span class="asterisk">*</span>
+                      </label>
+                      <input autocomplete="on" type="text" name="SCHOOL" value="">
+                    </div>
+                    <div class="mc-field-group size1of2">
+                      <label for="mce-GRADDATE">Expected Graduation<span class="asterisk">*</span>
+                      </label>
+                      <input type="text" name="GRADMONTH" placeholder="MM">
+                      <input type="text" name="GRADYEAR" placeholder="YYYY">
+                    </div>
+                    <div class="size1of2">
+                      <label for="mce-CLASS">Classification<span class="asterisk">*</span>
+                      </label>
+                      <br>
+                      <input type="radio" name="CLASS" value="Freshmen"> Freshmen<br>
+                      <input type="radio" name="CLASS" value="Sophmore"> Sophmore<br>
+                      <input type="radio" name="CLASS" value="Junior"> Junior<br>
+                      <input type="radio" name="CLASS" value="Senior"> Senior<br>
+                      <input type="radio" name="CLASS" value="Other"> Other<br>
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-MAJOR">Major<span class="asterisk">*</span>
+                      </label>
+                      <input type="text" name="MAJOR" value="">
+                    </div>
+                  </li>
+                </ol>
               </div>
 
 
