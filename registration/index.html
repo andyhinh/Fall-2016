@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900" rel="stylesheet" type="text/css">
   <link href="../css/main.css" rel="stylesheet">
   <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 </head>
 
 <body class="sponsor">
@@ -123,7 +123,7 @@
                     <div class="mc-field-group">
                       <label for="mce-SCHOOL">University<span class="asterisk">*</span>
                       </label>
-                      <input autocomplete="on" type="text" name="SCHOOL" value="">
+                      <input id="SCHOOL" autocomplete="on" type="text" name="SCHOOL" value="">
                     </div>
                     <div class="mc-field-group size1of2">
                       <label for="mce-GRADDATE">Expected Graduation<span class="asterisk">*</span>
@@ -166,6 +166,18 @@
 
                   <li class="page" id="page6">
                     <h2>Additional Information</h2>
+                    <div class="mc-field-group">
+                      <label for="mce-TRAVEL">Travel Reimbursement</label>
+                      <input id="travel-1" type="radio" name="TRAVEL" value="yes"> Yes <br>
+                      <div id="travel_agreement">
+                        <!--
+                          Need the travel agreement and requirement to bring a
+                          proof of purchase.
+                        -->
+                      </div>
+                      <input id="travel-0" type="radio" name="TRAVEL" value="no"> No <br>
+                    </div>
+                    <script type="text/javascript" src="../scripts/travel.js"></script>
                   </li>
                 </ol>
               </div>
