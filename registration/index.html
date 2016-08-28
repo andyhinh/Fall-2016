@@ -9,9 +9,10 @@
   <title>Registration | CodeRED Curiosity</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
   <link href="../css/main.css" rel="stylesheet">
   <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 </head>
 
 <body class="sponsor">
@@ -123,13 +124,13 @@
                     <div class="mc-field-group">
                       <label for="mce-SCHOOL">University<span class="asterisk">*</span>
                       </label>
-                      <input autocomplete="on" type="text" name="SCHOOL" value="">
+                      <select class="university-fill"></select>
                     </div>
                     <div class="mc-field-group size1of2">
                       <label for="mce-GRADDATE">Expected Graduation<span class="asterisk">*</span>
                       </label>
-                      <input type="text" name="GRADMONTH" placeholder="MM">
-                      <input type="text" name="GRADYEAR" placeholder="YYYY">
+                      <input type="text" name="GRADMONTH" placeholder="MM" maxlength="2">
+                      <input type="text" name="GRADYEAR" placeholder="YYYY" maxlength="4">
                     </div>
                     <div class="size1of2">
                       <label for="mce-CLASS">Classification<span class="asterisk">*</span>
@@ -147,6 +148,95 @@
                       <input type="text" name="MAJOR" value="">
                     </div>
                   </li>
+                  <script type="text/javascript" src="../scripts/universityFill.js"></script>
+
+                  <li class="page" id="page3">
+                    <h2>Skills & Technical Background</h2>
+                    <!--
+                    Needs implementation of select2 with tag support.
+                    -->
+                    <div class="mc-field-group">
+                      <label for="mce-SKILL">What are your skills? (e.g. Java, C++, SQL, HTML, Python, JS, React, Node)
+                        <span class="asterisk">*</span>
+                      </label>
+                      <select class="technical-skills" multiple></select>
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-FIRST">Is this your first Hackathon?</label>
+                      <br>
+                      <input id="first-1" type="radio" name="FIRST" value="Yes"> Yes<br>
+                      <input id="first-0" type="radio" name="FIRST" value="No"> No<br>
+                    </div>
+                    <div class="mc-field-group" id="mentorship">
+                      <label for="mce-MENTOR">Do you need a mentor?</label>
+                      <br>
+                      <input type="radio" name="MENTORSHIP" value="Yes"> Yes<br>
+                      <input type="radio" name="MENTORSHIP" value="No"> No<br>
+                    </div>
+                  </li>
+                  <script type="text/javascript" src="../scripts/techskills.js"></script>
+
+                  <li class="page" id="page4">
+                    <h2>Interest</h2>
+                    <div class="mc-field-group">
+                      <label for="mce-INTEREST">What are you interested in?</label>
+                        <select class="interest" multiple></select>
+                    </div>
+                    <script type="text/javascript" src="../scripts/interest.js"></script>
+                  </li>
+
+                  <li class="page" id="page5">
+                    <h2>Dietary/Allegies</h2>
+                    <!--
+                    Select2 needs to be worked on
+                    -->
+                    <div class="mc-field-group" id="ALLEGY">
+                      <label for="mce-ALLEGY"> Please list any Dietary/Allegy limitations:</label>
+                      <select class="ALLEGY" multiple></select>
+                    </div>
+                    <script type="text/javascript" src="../scripts/dietary.js"></script>
+                  </li>
+
+                  <li class="page" id="page6">
+                    <h2>Additional Information</h2>
+                    <div class="mc-field-group">
+                      <label for="mce-TRAVEL">Travel Reimbursement</label>
+                      <input id="travel-1" type="radio" name="TRAVEL" value="yes"> Yes <br>
+                      <div id="travel_agreement">
+                        <h2>This is travel agreement</h2>
+                        <!--
+                          Need the travel agreement and requirement to bring a
+                          proof of purchase.
+                        -->
+                      </div>
+                      <input id="travel-0" type="radio" name="TRAVEL" value="no" checked="checked"> No <br>
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-BUS">Would you like us to send you bus transportation information?</label>
+                      <input id="bus-1" type="radio" name="BUS" value="yes"> Yes <br>
+                      <input id="bus-0" type="radio" name="BUS" value="no" checked="checked"> No <br>
+                    </div>
+                    <script type="text/javascript" src="../scripts/travel.js"></script>
+                    <div class="mc-field-group">
+                      <label for="mce-ADDITIONAL">What would you like to see at the event?
+                      </label>
+                      <!--
+                      Need to make the textarea cap width
+                      -->
+                      <textarea rows="4" cols="50"></textarea>
+                    </div>
+                  </li>
+                  <li class="page" id="page7">
+                    <h2>Agreements</h2>
+                    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
+                    <h3>MLH Data Sharing</h3>
+                    <p>We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share
+                      certain application/registration information for event administration, ranking, MLH administration,
+                      pre and post-event informational e-mails, and occasional messages about hackathons in line with the
+                      <a href="https://mlh.io/privacy">MLH Privacy Policy.</a>
+                    </p>
+                  </li>
+
                 </ol>
               </div>
 
