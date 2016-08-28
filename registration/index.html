@@ -10,9 +10,11 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.10/uploadfile.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
   <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.10/jquery.uploadfile.min.js"></script>
 </head>
 
 <body class="sponsor">
@@ -116,7 +118,7 @@
                       <input type="radio" name="ETHNICITY" value="NativeAmerican"> Native American<br>
                       <input type="radio" name="ETHNICITY" value="Pacific Islander"> Pacific Islander<br>
                       <input type="radio" name="ETHNICITY" value="White"> White<br>
-                      <input type="radio" name="ETHNICITY" value="Other" checked="checked"> Other
+                      <input type="radio" name="ETHNICITY" value="Other"> Other, specify: <input type="text" name="ETHNICITY" />
                     </div>
                     <hr />
                   </li>
@@ -137,10 +139,12 @@
                       <label for="mce-CLASS">Classification<span class="asterisk">*</span>
                       </label>
                       <br>
+                      <input type="radio" name="CLASS" value="High School"> High School<br>
                       <input type="radio" name="CLASS" value="Freshmen"> Freshmen<br>
                       <input type="radio" name="CLASS" value="Sophmore"> Sophmore<br>
                       <input type="radio" name="CLASS" value="Junior"> Junior<br>
                       <input type="radio" name="CLASS" value="Senior"> Senior<br>
+                      <input type="radio" name="CLASS" value="Graduates"> Graduate<br>
                       <input type="radio" name="CLASS" value="Other"> Other<br>
                     </div>
                     <div class="mc-field-group">
@@ -165,15 +169,35 @@
                     <div class="mc-field-group">
                       <label for="mce-FIRST">Is this your first Hackathon?</label>
                       <br>
-                      <input id="first-1" type="radio" name="FIRST" value="Yes"> Yes<br>
-                      <input id="first-0" type="radio" name="FIRST" value="No" checked="checked"> No<br>
+                      <input id="first-1" type="radio" name="FIRST" value="true"> Yes<br>
+                      <input id="first-0" type="radio" name="FIRST" value="false" checked="checked"> No<br>
                     </div>
                     <div class="mc-field-group" id="mentorship">
                       <label for="mce-MENTOR">Do you need a mentor?</label>
                       <br>
-                      <input type="radio" name="MENTORSHIP" value="Yes"> Yes<br>
-                      <input type="radio" name="MENTORSHIP" value="No"> No<br>
+                      <input type="radio" name="MENTORSHIP" value="true"> Yes<br>
+                      <input type="radio" name="MENTORSHIP" value="false"> No<br>
                     </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LINKS">Link to GitHub/Linkedin/Website/etc.</label>
+                      <span>GitHub: <input type="url" name="github"></span>
+                      <span>LinkedIn: <input type="url" name="linkedin"></span>
+                      <span>Website: <input type="url" name="website"></span>
+                      <span>Other: <input type="url" name="other"></span>
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-RESUME">Drag Your Resume Here</label>
+                      <div id="fileuploader">Upload </div>
+                    </div>
+                    <script>
+                      $(document).ready(function()
+                      {
+                      	$("#fileuploader").uploadFile({
+                      	url:"YOUR_FILE_UPLOAD_URL",
+                      	fileName:"myfile"
+                      	});
+                      });
+                    </script>
                   </li>
                   <script type="text/javascript" src="../scripts/techskills.js"></script>
 
@@ -237,7 +261,6 @@
                       <a href="https://mlh.io/privacy">MLH Privacy Policy.</a>
                     </p>
                   </li>
-
                 </ol>
               </div>
 
