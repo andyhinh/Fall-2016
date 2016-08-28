@@ -10,9 +10,11 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.10/uploadfile.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
   <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.10/jquery.uploadfile.min.js"></script>
 </head>
 
 <body class="sponsor">
@@ -116,7 +118,7 @@
                       <input type="radio" name="ETHNICITY" value="NativeAmerican"> Native American<br>
                       <input type="radio" name="ETHNICITY" value="Pacific Islander"> Pacific Islander<br>
                       <input type="radio" name="ETHNICITY" value="White"> White<br>
-                      <input type="radio" name="ETHNICITY" value="Other" checked="checked"> Other
+                      <input type="radio" name="ETHNICITY" value="Other"> Other, specify: <input type="text" name="ETHNICITY" />
                     </div>
                     <hr />
                   </li>
@@ -174,6 +176,26 @@
                       <input type="radio" name="MENTORSHIP" value="Yes"> Yes<br>
                       <input type="radio" name="MENTORSHIP" value="No"> No<br>
                     </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LINKS">Link to GitHub/Linkedin/Website/etc.</label>
+                      <span>GitHub: <input type="url" name="github"></span>
+                      <span>LinkedIn: <input type="url" name="linkedin"></span>
+                      <span>Website: <input type="url" name="website"></span>
+                      <span>Other: <input type="url" name="other"></span>
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-RESUME">Drag Your Resume Here</label>
+                      <div id="fileuploader">Upload </div>
+                    </div>
+                    <script>
+                      $(document).ready(function()
+                      {
+                      	$("#fileuploader").uploadFile({
+                      	url:"YOUR_FILE_UPLOAD_URL",
+                      	fileName:"myfile"
+                      	});
+                      });
+                    </script>
                   </li>
                   <script type="text/javascript" src="../scripts/techskills.js"></script>
 
