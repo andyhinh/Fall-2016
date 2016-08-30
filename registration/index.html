@@ -13,6 +13,7 @@
   <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.10/uploadfile.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
   <script type="text/javascript" src="../scripts/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="../scripts/jquery.validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
   <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.10/jquery.uploadfile.min.js"></script>
 </head>
@@ -170,13 +171,13 @@
                         </label>
                         <select class="technical-skills" multiple></select>
                       </div>
-                      <div class="mc-field-group">
+                      <div class="mc-field-group size1of2">
                         <label for="mce-FIRST">Is this your first Hackathon?</label>
                         <br>
                         <input id="first-1" type="radio" name="FIRST" value="true"> Yes<br>
                         <input id="first-0" type="radio" name="FIRST" value="false" checked="checked"> No<br>
                       </div>
-                      <div class="mc-field-group" id="mentorship">
+                      <div class="mc-field-group size1of2" id="mentorship">
                         <label for="mce-MENTOR">Do you need a mentor?</label>
                         <br>
                         <input type="radio" name="MENTORSHIP" value="true"> Yes<br>
@@ -184,10 +185,10 @@
                       </div>
                       <div class="mc-field-group">
                         <label for="mce-LINKS">Link to GitHub/Linkedin/Website/etc.</label>
-                        <span>GitHub: <input type="url" name="github"></span>
-                        <span>LinkedIn: <input type="url" name="linkedin"></span>
-                        <span>Website: <input type="url" name="website"></span>
-                        <span>Other: <input type="url" name="other"></span>
+                        <label for="mce-GIT">GitHub: <input type="url" name="github"></label>
+                        <label for="mce-LINKEDIN">LinkedIn: <input type="url" name="linkedin"></label>
+                        <label for="mce-WEBSITE">Website: <input type="url" name="website"></label>
+                        <label for="mce-OTHERINFO">Other: <input type="url" name="other"></label>
                       </div>
                       <div class="mc-field-group">
                         <label for="mce-RESUME">Drag Your Resume Here</label>
@@ -238,11 +239,13 @@
                         <label for="mce-TRAVEL">Travel Reimbursement</label>
                         <input id="travel-1" type="radio" name="TRAVEL" value="yes"> Yes <br>
                         <div id="travel_agreement">
-                          <h2>This is travel agreement</h2>
                           <!--
                             Need the travel agreement and requirement to bring a
                             proof of purchase.
                           -->
+                          <p>*Notice* In order to be eligible for travel reimbursement,
+                            you must provide a proof of purchase on-site (e.g. Airplane ticket or bus ticket).
+                            Your reimbursement is based on how far you traveled.</p>
                         </div>
                         <input id="travel-0" type="radio" name="TRAVEL" value="no" checked="checked"> No <br>
                       </div>
