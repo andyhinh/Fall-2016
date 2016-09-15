@@ -66,6 +66,41 @@ section {
   text-decoration: none;
 }
 
+.btn-group {
+  display: flex;
+
+}
+.btn-radio input {
+  display: none !important;
+}
+.btn-radio {
+  /*height: 2rem;*/
+  font-size: 2rem;
+  line-height: 1;
+  padding: 1em 2em;
+  flex: 1 1 auto;
+  background-color: #dddddd;
+  text-align: center;
+  margin-right: 1px;
+}
+.btn-radio:hover {
+  background-color: #cccccc;
+}
+.btn-radio:active {
+  background-color: #aaaaaa;
+}
+.btn-radio.selected {
+  background-color: #00b388;
+}
+
+.btn-group .btn-radio:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.btn-group .btn-radio:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-right: 0;
+}
+
 @media screen and (max-width: 360px) {
   .btn-white {
     margin-bottom: 0.5rem;
@@ -368,6 +403,18 @@ h2 {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
   }
+}
+
+/* Registration */
+.page.content {
+/*   transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1); */
+}
+.page:not(.current) .content {
+  overflow: hidden;
+  height: 0;
+}
+.page.current {
+/*   height: 100px; */
 }
 
 
