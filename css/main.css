@@ -360,6 +360,40 @@ h2 {
   fill: #0CAEE1;
 }
 
+/* Schedule */
+.schedule {
+  background-color: #F78753;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.schedule h4 {
+  font-weight: bold;
+}
+
+.schedule ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.schedule li {
+  padding-bottom: 4%;
+}
+
+.schedule-divider.divider polyline {
+  fill: #F78753;
+}
+
+.list-time {
+  text-align: right;
+  list-style-type: none;
+}
+
+.list-event {
+  text-align: left;
+  list-style-type: none;
+}
+
 /* Sponsors */
 
 .sponsors {
