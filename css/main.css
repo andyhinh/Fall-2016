@@ -360,6 +360,20 @@ h2 {
   fill: #0CAEE1;
 }
 
+/* Schedule */
+.schedule {
+  background-color: #C8102E;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.schedule h4 {
+  font-weight: bold;
+}
+
+.schedule-divider.divider polyline {
+  fill: #C8102E;
+}
 
 /* Sponsors */
 
