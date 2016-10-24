@@ -385,13 +385,24 @@ h2 {
 }
 
 .list-time {
-  text-align: right;
-  list-style-type: none;
+  width: 100%;
+  text-align: center;
 }
 
-.list-event {
+.list-time tr > td {
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.list-time tr > td:first-child {
+  font-weight: bold;
+  text-align: right;
+  width: 40%;
+}
+
+.list-time tr > td:last-child {
   text-align: left;
-  list-style-type: none;
+  width: 60%;
 }
 
 /* Sponsors */
